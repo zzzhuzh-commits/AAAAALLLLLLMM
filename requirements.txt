@@ -12,3 +12,4 @@ youtube-search-python
 sqlalchemy-json
 requests
 SQLAlchemy==1.4.52
+Pillow
