@@ -14,8 +14,11 @@ while flag:
         from .utils import *
 
         break
+
     except ModuleNotFoundError as e:
-        install_pip(e.name)
+        pkg = "Pillow" if e.name == "PIL" else e.name
+        install_pip(pkg)
+
         check += 1
         if check > 5:
             break
