@@ -14,4 +14,4 @@ requests
 SQLAlchemy==1.4.52
 Pillow
 fonttools
-lyricsgenius==3.0.1
+lyricsgenius==2.0.1
