@@ -9,7 +9,7 @@ from wand.color import Color
 from wand.drawing import Drawing
 from wand.image import Image as zedimage
 
-from .utils import _zedutils
+from .utils.tools import runcmd
 
 MARGINS = [50, 150, 250, 350, 450]
 
