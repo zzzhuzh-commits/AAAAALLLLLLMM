@@ -55,6 +55,7 @@ if Config.HEROKU_APP_NAME is not None and Config.HEROKU_API_KEY is not None:
     heroku_var = app.config()
 else:
     app = None
+    heroku_var = {}
 
 
 if ENV:
