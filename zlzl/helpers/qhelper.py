@@ -22,7 +22,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import types
 
-from .utils import _zedutils
+from .utils.tools import runcmd
 
 # //Random colors for name
 COLORS = [
