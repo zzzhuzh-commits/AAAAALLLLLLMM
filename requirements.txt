@@ -12,3 +12,4 @@ lxml_html_clean
 youtube-search-python
 sqlalchemy-json
 requests
+SQLAlchemy==2.0.30
