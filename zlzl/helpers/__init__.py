@@ -3,7 +3,7 @@ from .aiohttp_helper import AioHttp
 from .utils import *
 
 flag = True
-check = 0
+retry_count = 0
 
 while flag:
     try:
@@ -20,6 +20,6 @@ while flag:
         pkg = "Pillow" if e.name == "PIL" else e.name
         install_pip(pkg)
 
-        check += 1
-        if check > 5:
+        retry_count += 1
+        if retry_count > 5:
             break
