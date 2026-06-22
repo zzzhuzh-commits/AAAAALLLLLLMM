@@ -186,7 +186,7 @@ async def process(msg, user, client, reply, event, replied=None):  # sourcery no
                 cmd = (
                     f"lottie_convert.py --frame 0 -if lottie -of png {sticker} {file_1}"
                 )
-                stdout, stderr = (await _zedutils.runcmd(cmd))[:2]
+                stdout, stderr = (await runcmd(cmd))[:2]
                 stimg = Image.open("./temp/q.png")
             else:
                 stimg = Image.open(sticker)
@@ -227,7 +227,7 @@ async def process(msg, user, client, reply, event, replied=None):  # sourcery no
         file_1 = os.path.join("./temp/", "q.png")
         if sticker.endswith(("tgs")):
             cmd = f"lottie_convert.py --frame 0 -if lottie -of png {sticker} {file_1}"
-            stdout, stderr = (await _zedutils.runcmd(cmd))[:2]
+            stdout, stderr = (await runcmd(cmd))[:2]
             stimg = Image.open("./temp/q.png")
         else:
             stimg = Image.open(sticker)
