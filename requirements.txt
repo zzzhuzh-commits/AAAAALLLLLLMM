@@ -3,3 +3,4 @@ yt-dlp
 telebot
 heroku3
 validators==0.22.0
+SQLAlchemy==2.0.30
