@@ -3,7 +3,6 @@ yt-dlp
 pyTelegramBotAPI
 heroku3
 validators==0.22.0
-SQLAlchemy==2.0.30
 psycopg2-binary
 aiohttp
 googletrans==4.0.0rc1
