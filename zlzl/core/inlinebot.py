@@ -10,7 +10,8 @@ from telethon import Button, types, version
 from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery
 from youtubesearchpython import VideosSearch
-from zlzl import zedub, zedversion, StartTime
+from ..core.session import zedub
+from .. import zedversion, StartTime
 from ..Config import Config
 from ..helpers.functions import rand_key, zedalive, check_data_base_heal_th, get_readable_time
 from ..helpers.functions.utube import download_button, get_yt_video_id, get_ytthumb, result_formatter, ytsearch_data
