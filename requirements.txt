@@ -2,3 +2,4 @@ Telethon
 yt-dlp
 telebot
 heroku3
+validators==0.22.0
