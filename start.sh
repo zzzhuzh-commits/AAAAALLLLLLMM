@@ -1,2 +1,2 @@
-python web.py &
-python -m zlzl
+python3 web.py &
+python3 -m zlzl
