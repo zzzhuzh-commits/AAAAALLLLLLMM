@@ -62,8 +62,8 @@ except Exception as e:
 
 async def startup_process():
     await verifyLoggerGroup()
-    # await load_plugins("plugins")
-    # await load_plugins("assistant")
+    await load_plugins("plugins")
+    await load_plugins("assistant")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
